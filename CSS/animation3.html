@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+           #parent{
+            width: 500px;
+            border-radius: 20px;
+            margin: 20px auto;
+            box-shadow: 0 0 10px black;
+            position: relative;
+            overflow: hidden;
+
+        }
+        #parent>img{
+            width: 500px;
+            height: 300px;
+            border-radius: 20px;
+            margin: auto;
+            overflow: hidden;
+            object-fit: cover;
+        }
+        #wraper1,#wraper2,#wraper3,#wraper4{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 500px;
+            height: 300px;
+            border-radius: inherit;
+            overflow: hidden;
+
+        }
+        #wraper1{
+            background-color: blue;
+            transition: all 1s linear 6s;
+        }
+        #wraper2{
+            background-color: rgb(221, 116, 177);
+            transition: all 1s linear 4s;
+        }
+        #wraper3{
+            background-color: rgb(90, 238, 90);
+            transition: all 1s linear 2s;
+        }
+        #wraper4{
+            background-color: rgb(138, 245, 227);
+            transition: all 1s linear 0s;
+        }
+        #wraper1:hover{
+            cursor: pointer;
+            transform: translateX(100%);
+
+        }
+        #wraper2:hover{
+            cursor: pointer;
+            transform: translateX(-100%);
+            
+        }
+        #wraper3:hover{
+            cursor: pointer;
+            transform: translateY(100%);
+            
+        }
+        #wraper4:hover{
+            cursor: pointer;
+            transform: translateY(-100%);
+            
+        }
+    </style>
+</head>
+<body>
+    <div id="parent">
+        <img src="../JAVASCRIPT/images/carousel-3.jpg" alt="">
+        <div id="wraper1">
+            <div id="wraper2">
+                <div id="wraper3">
+                    <div id="wraper4">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>animation2</title>
+    <style>
+        table,td,tr{
+            padding: 5px;
+            border-collapse: collapse;
+            border: 2px solid black;
+            width: 200px;
+            margin-left: 100px;
+
+        }
+        #parent{
+            width: 400px;
+            border-radius: 30px;
+            margin: 20px auto;
+            box-shadow: 0 0 10px black;
+            position: relative;
+            top: 0px;
+            left: 0px;
+            overflow: hidden;
+
+        }
+        #parent>img{
+            width: 400px;
+            height: 400px;
+            border-radius: 20px;
+            margin: auto;
+            overflow: hidden;
+        }
+        #wraper{
+            position: absolute;
+            width: 400px;
+            height: 100px;
+            overflow: hidden;
+        }
+        #parent:hover>img{
+            cursor: pointer;
+            transform:translateY(-25%)
+        }
+        #parent:hover>#wraper{
+            cursor: pointer;
+            transform:translateY(-100%)
+        }
+
+    </style>
+</head>
+<body>
+    <div id="parent">
+        <img src="../JAVASCRIPT/images/carousel-3.jpg" alt="">
+        <div id="wraper">
+            <table>
+                <tr>
+                    <td>Dress:ladies frock</td>
+                </tr>
+                <tr>
+                    <td>brand name: Mdin india</td>
+                </tr>
+                <tr>
+                    <td>
+                        Rs.1500/-
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</body>
+</html>
