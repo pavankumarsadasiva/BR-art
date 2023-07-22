@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>forms in html</title>
+    <style>
+        form{
+            width: 400px;
+            background-color: orange;
+        }
+    </style>
+</head>
+<body>
+   <form action="">
+    <fieldset>
+        <legend>Registration Form</legend>
+        <label for="fname">First name:</label>
+        <input type="text" id="fname" name="fname" placeholder="First-name" ><br>
+        <label for="lname">last name:</label>
+        <input type="text" id="lname" name="lname" placeholder="Last-name"><br>
+        <label for="pass">passWord:</label>
+        <input type="password" id="pass"  name="passWord" placeholder="passWord"><br><br>
+        <label >Gender :</label>
+        <input type="radio" name="Gender" >Male
+        <input type="radio" name="Gender" >Female<br><br>
+        <label >Know languages:</label>
+        <input type="checkbox" name="languages" >telugu
+        <input type="checkbox" name="languages" >Tamil
+        <input type="checkbox" name="languages" >English 
+        <input type="checkbox" name="languages" >Hindi <br><br>
+        <input type="submit">
+        <input type="reset"><br>
+
+        <input type="range">
+        <input type="file"><br><br>
+        google search<input type="search"><br><br>
+        <label for="phone">Enter a phone number:</label><br><br>
+        <input type="tel" id="phone" name="phone" placeholder="123-45-678" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" required><br><br>
+        <small>Format: 123-45-678</small><br><br>
+       Choose a Color: <input type="color"><br>
+       Month<input type="month"><br>
+       Date<input type="date"><br>
+       Number<input type="number"  min="0" max="15"><br>
+       Time<input type="time" name="time" id="time"><br>
+      week: <input type="week" name="week" id="week"><br>
+      URL<input type="url" name="url" id="url"><br>
+      <input type="button" value="clickme" onclick="alert('hello world')">
+    </fieldset>
+   </form> 
+</body>
+</html>

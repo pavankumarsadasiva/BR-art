@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Html Demo</title>
+    <style>
+        #data{
+            border: 2px solid orange;
+            height: 30px;
+            border-radius: 10px; 
+        }
+        button{
+            border: 2px solid rgb(90, 211, 248);
+            border-radius: 10px;
+        }
+    </style>
+
+</head>
+<body>
+        <div>
+            <div class="a1">
+                <input type="text" id="data" placeholder="add item">
+                <button onclick="add()">Add</button>
+                <button onclick="del()">Delete</button><br>
+            </div>
+            <div id="res">
+                
+            </div>
+        </div>
+       
+    <Script>
+        
+        
+                let todoele = document.getElementById("data")
+                 let tasklist = document.getElementById("res")
+
+                function add(){
+                 if(todoele.value.length==0){
+                alert("Enter a task details")
+                }
+                else{
+                tasklist.innerHTML = tasklist.innerHTML+`  
+                <span id="work"><ul><li>${todoele.value}</li></ul></span>`   
+                
+                todoele.value=""
+                 }
+                }
+                function del(){
+
+                    let tasklist = document.getElementById("res")
+                   
+                   tasklist.innerHTML='';
+                }
+    </Script>
+</body>
+</html>

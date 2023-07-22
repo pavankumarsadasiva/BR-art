@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login form</title>
+    <style>
+        *{
+            padding: 0px;
+            margin: 0px;
+            box-sizing: border-box;
+        }
+        .field input{
+            /* margin-left: 20px; */border-radius: 5px;
+            padding-left: 10px;
+            margin-top: 10px;padding: 10px;
+        }
+        .field{
+            margin-top: 10px;
+            display: block;
+        }
+        .container{
+            border: 1px solid black;
+            width: 300px;
+            height: 50vh;
+            border-radius: 10px;
+            position: absolute;
+            margin-left: 40%;
+            margin-top: 10%;
+            background-color: orange;
+            
+        }
+        .container1{
+            margin-left: 20px;
+
+            margin-right: 20px;
+            
+        }
+        .field1{
+            margin-top: 10px;
+        }
+        
+        
+        .field2{
+            margin-top: 10px;
+            text-align: center;
+
+        }
+        .field2 input{
+            width: 100%;
+            padding: 10px;
+            border: none;
+            border-radius: 10px;
+            background-color: rgb(98, 124, 194);
+        }
+        .field1 a{
+            text-decoration: none;
+            float: right;
+        }
+        .footer a{
+            text-decoration: none;
+        }
+        .footer{
+            margin-top: 20px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <form action="">
+            <div class="container1"> 
+                <h1> Rigistration Form</h1>
+                <hr >
+                <div class="field">
+                    <label for="">User Name:</label> <br>
+                    <input type="text" name="uname" placeholder="username">
+                </div>
+                <div class="field">
+                    <label for="">passWord:</label><br>
+                    <input type="password" name="pass" placeholder="passWord">
+                </div>
+                <div class="field1">
+                    <input type="checkbox"> Remember me <a href="#" >Forgot passWord</a>
+                </div>
+                <div class="field2"> <input type="button" value="login"> </div>
+                <div class="footer">
+                    <span>not a member? </span> <a href="#">Sing Up</a>
+                </div>
+
+            </div>
+        </form>
+    </div>
+    
+</body>
+</html>

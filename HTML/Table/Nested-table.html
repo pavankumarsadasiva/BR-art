@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>nested table</title>
+    <style>
+        th,tr,td{
+            border: 1px solid black;
+        }
+      
+        table{
+            background-color: beige;
+            
+        }
+       tr:nth-child(even){
+        color: aqua;
+       }
+       td:nth-child(odd){
+        color: red;
+       }
+       .a td:nth-child(even){
+        color: blue;
+       }
+       .a td:nth-child(odd){
+        color: #ff00bf;
+       }
+       tr:nth-child(even) :hover{
+        background-color: yellow;
+       }
+    </style>
+</head>
+<body>
+    <table id="aa">
+        <caption>nested table</caption>
+        <tr>
+            <th>rollnumber</th>
+            <th>name</th>
+            <th>year Marhs <hr>
+                <table>
+                    <th style="width: 87px;">sem1</th>
+                    <th style="width: 87px;">sem2</th>
+                </table>
+            </th>
+        </tr>
+        <tr>
+            <td>101</td>
+            <td>pavan</td>
+            <td colspan="2">
+                <table class="a">
+                    <tr >
+                        <td style="width:40px;"> 96</td>
+                        <td style="width:40px;" >78</td>
+                        <td style="width:40px;"> 96</td>
+                        <td style="width:40px;" >78</td>
+                    </tr>
+                </table>
+            </td>
+
+        </tr>
+        <tr>
+            <td>102</td>
+            <td>vami</td>
+            <td>
+                <table class="a">
+                    <tr >
+                        <td style="width:40px;"> 89</td>
+                        <td style="width:40px;" >88</td>
+                        <td style="width:40px;"> 89</td>
+                        <td style="width:40px;" >88</td>
+                    </tr>
+                </table>
+            </td>
+
+        </tr>
+        <tr>
+            <td>103</td>
+            <td>hari</td>
+            <td>
+                <table class="a">
+                    <tr >
+                       
+                        <td style="width:40px;"> 79</td>
+                        <td style="width:40px;" >82</td>
+                        <td style="width:40px;"> 89</td>
+                        <td style="width:40px;" >72</td>
+                    </tr>
+                </table>
+            </td>
+
+        </tr>
+        <tr>
+            <td>104</td>
+            <td>gopi</td>
+            <td>
+                <table class="a">
+                    <tr >
+                        <td style="width:40px;"> 85</td>
+                        <td style="width:40px;" >78</td>
+                        <td style="width:40px;"> 79</td>
+                        <td style="width:40px;" >82</td>
+                    </tr>
+                </table>
+            </td>
+
+        </tr>
+
+    </table>
+</body>
+</html>
